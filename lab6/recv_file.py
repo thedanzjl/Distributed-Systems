@@ -6,7 +6,8 @@ PORT = 8888
 
 def name_manager(file_name, dec=True):
     """
-    Checks if this file name is already in use. In this case adds in the end of file _copy with number
+    Checks if this file name is already in use. In this case adds "copy" in the end of the file name with relative
+    number of copy.
     :param dec: do we need to decode from bytes to string?
     :returns: updated file name
     """
@@ -35,7 +36,7 @@ def name_manager(file_name, dec=True):
 def recv_file():
     print("hosted on port %i ...." % PORT)
     s = socket.socket()
-    s.bind(("localhost", PORT))
+    s.bind(("", PORT))
     s.listen(3)
     while True:
         client_socket, address = s.accept()
