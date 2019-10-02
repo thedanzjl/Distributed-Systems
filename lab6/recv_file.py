@@ -1,10 +1,9 @@
 import socket
-import sys
 import os
 
-# s = socket.socket()
-# s.bind("localhost", 8000)
-# s.listen(3)
+s = socket.socket()
+s.bind("localhost", 8000)
+s.listen(3)
 
 
 def name_manager(file_name):
