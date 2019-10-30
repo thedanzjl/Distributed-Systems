@@ -1,6 +1,8 @@
 from multiprocessing import Process, Pipe
 
 
+
+
 def local_time(counter):
     return ' LAMPORT_TIME={}'.format(counter)
 
