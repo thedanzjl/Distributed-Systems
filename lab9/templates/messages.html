@@ -1,0 +1,5 @@
+{% for msg in messages %}
+<div id="{{ msg._id }}" class="msg {{ loop.cycle('light', 'dark') }}">
+    <p class="msg-content">{{ msg.content }}</p>
+</div>
+{% endfor %}
