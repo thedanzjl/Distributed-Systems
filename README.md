@@ -218,8 +218,12 @@ rs0:PRIMARY> rs.config()\
 		},\
 		"replicaSetId" : ObjectId("5db87884e32245ac105cdbf8")\
 	}\
-}\
+}
 
+
+### my brand new stylish chat web app before shutdown
+
+![screenshot](https://github.com/thedownhill/Distributed-Systems/blob/master/lab9/screen_before.png)
 
 ### output of 'rs.status()' after shutdown (now node with id=0 is unavailable and node with id=1 is PRIMARY):
 
@@ -438,3 +442,9 @@ rs0:PRIMARY> rs.config()\
 		"replicaSetId" : ObjectId("5db87884e32245ac105cdbf8")\
 	}\
 }
+
+### my brand new stylish web app after shutdown (nothing changed; still work):
+
+![screenshot](https://github.com/thedownhill/Distributed-Systems/blob/master/lab9/screen_after.png)
+
+
